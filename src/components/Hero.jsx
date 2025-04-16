@@ -1,5 +1,5 @@
 import React from 'react';
-import salonImage from '../salon.jpg';
+import salonImage from '../salon.webp';
 
 const Hero = () => (
   <section

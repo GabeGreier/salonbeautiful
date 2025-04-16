@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// Only import the icons you use
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => (
