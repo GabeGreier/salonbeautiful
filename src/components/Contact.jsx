@@ -1,16 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Only import the icons you use
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => (
-  <footer className="h-[20vh] flex flex-col sm:flex-row justify-between items-center px-6 sm:px-10 bg-[#faf9f7]" aria-label="Contact and Footer">
-    <div className="flex flex-col items-start font-baskerville mb-4 sm:mb-0">
-      <p className="text-base sm:text-lg mb-1">Phone: (306) 555-1234</p>
-      <p className="text-base sm:text-lg mb-1">Email: info@salonbeautiful.com</p>
+  <footer className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-10 py-6 bg-[#faf9f7] font-baskerville" aria-label="Contact and Footer">
+    <div className="flex flex-col items-center sm:items-start mb-4 sm:mb-0 w-full sm:w-auto">
+      <p className="text-base sm:text-lg mb-1 text-center sm:text-left">Phone: (306) 555-1234</p>
+      <p className="text-base sm:text-lg mb-1 text-center sm:text-left">Email: info@salonbeautiful.com</p>
     </div>
-    <div className="flex flex-col items-end font-baskerville">
-      <div className="flex space-x-4 mb-2">
+    <div className="flex flex-col items-center sm:items-end w-full sm:w-auto">
+      <div className="flex flex-row space-x-4 mb-2">
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <FontAwesomeIcon icon={faInstagram} className="text-2xl hover:opacity-80 transition duration-300" />
         </a>
@@ -18,7 +17,7 @@ const Contact = () => (
           <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:opacity-80 transition duration-300" />
         </a>
       </div>
-      <p className="text-base sm:text-lg">© 2025 Salon Beau.ti.ful Inc. All rights reserved.</p>
+      <p className="text-base sm:text-lg text-center sm:text-right">© 2025 Salon Beau.ti.ful Inc. All rights reserved.</p>
     </div>
   </footer>
 );

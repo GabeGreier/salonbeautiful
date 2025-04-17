@@ -7,7 +7,7 @@ import Location from './components/Location';
 import Contact from './components/Contact';
 
 const App = () => (
-  <div className="bg-[#faf9f7] min-h-screen"
+  <div className="bg-[#faf9f7] min-h-screen overflow-x-hidden"
        style={{ fontFamily: 'Libre Baskerville' }}>
     <Navbar />
     <main>
