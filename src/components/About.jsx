@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '../about.webp';
+import aboutImage from '../assets/about.webp';
 
 const About = () => (
   <section className="flex flex-col md:flex-row items-center justify-center h-auto min-h-[60vh] py-12 bg-[#faf9f7]">
