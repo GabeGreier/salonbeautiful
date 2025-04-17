@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import Team from './components/Team';
+// import Team from './components/Team';
 import About from './components/About';
 import Location from './components/Location';
 import Contact from './components/Contact';
@@ -12,9 +12,6 @@ const App = () => (
     <Navbar />
     <main>
       <Hero />
-      <section id="team">
-        <Team />
-      </section>
       <section id="about">
         <About />
       </section>
