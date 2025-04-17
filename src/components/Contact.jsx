@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => (
-  <footer className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-10 py-6 bg-[#faf9f7] font-baskerville" aria-label="Contact and Footer">
+  <footer className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-10 py-6 bg-[#eeede9] font-baskerville" aria-label="Contact and Footer">
     <div className="flex flex-col items-center sm:items-start mb-4 sm:mb-0 w-full sm:w-auto">
       <p className="text-base sm:text-lg mb-1 text-center sm:text-left">Phone: (306) 955-2244</p>
       <p className="text-base sm:text-lg mb-1 text-center sm:text-left">Email: salonbeautiful16@gmail.com</p>
