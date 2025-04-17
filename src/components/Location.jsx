@@ -6,8 +6,8 @@ const Location = () => (
       <h2 className="text-3xl sm:text-5xl mb-2" style={{ fontFamily: 'Allura' }}>Salon Beau.ti.ful Inc.</h2>
       <div className="font-baskerville text-base sm:text-lg">
         <h3 className="text-xl font-semibold mb-1">Location</h3>
-        <p className="mb-1">123 Main Street</p>
-        <p className="mb-1">Saskatoon, SK</p>
+        <p className="mb-1">#3 901 Centennial Blvd</p>
+        <p className="mb-1">Warman, SK</p>
         <p className="mb-3">Canada</p>
         <h3 className="text-xl font-semibold mb-1">Hours</h3>
         <ul>
