@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
@@ -24,15 +24,22 @@ const Navbar = () => {
       aria-label="Main Navigation"
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-8 h-full">
-        <h1
+        {/* Title scrolls to top */}
+        <button
+          onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })}
+          className="bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
+          aria-label="Scroll to top"
           style={{ fontFamily: 'Allura' }}
-          className={`transition-all duration-300 whitespace-nowrap font-allura ${
-            isShrunk ? 'text-3xl sm:text-4xl' : 'text-5xl sm:text-7xl'
-          }`}
-          aria-label="Salon Beautiful Logo"
         >
-          Salon Beau.ti.ful Inc.
-        </h1>
+          <h1
+            className={`transition-all duration-300 whitespace-nowrap font-allura ${
+              isShrunk ? 'text-3xl sm:text-4xl' : 'text-5xl sm:text-7xl'
+            }`}
+            aria-label="Salon Beautiful Logo"
+          >
+            Salon Beau.ti.ful Inc.
+          </h1>
+        </button>
         {/* Hamburger Icon for Mobile */}
         <button
           className="sm:hidden text-3xl focus:outline-none"
@@ -55,18 +62,28 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <Link to="about" smooth className="hover:underline" aria-label="Learn about us">About</Link>
+            <Link
+              to="about"
+              smooth
+              duration={500}
+              offset={-window.innerHeight / 4}
+              className="hover:underline"
+              aria-label="Learn about us"
+            >
+              About
+            </Link>
           </li>
           <li>
             <Link to="contact" smooth className="hover:underline" aria-label="Contact us">Contact</Link>
           </li>
+          {/* Social Icons */}
           <li>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/salonbeautifulinc" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FontAwesomeIcon icon={faInstagram} className="text-2xl hover:opacity-80 transition duration-300" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/salonbeautifulinc" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:opacity-80 transition duration-300" />
             </a>
           </li>
@@ -91,18 +108,29 @@ const Navbar = () => {
             <Link to="team" smooth className="block px-6 py-4 border-b hover:underline" aria-label="Meet our team" onClick={handleNavClick}>Team</Link>
           </li>
           <li>
-            <Link to="about" smooth className="block px-6 py-4 border-b hover:underline" aria-label="Learn about us" onClick={handleNavClick}>About</Link>
+            <Link
+              to="about"
+              smooth
+              duration={500}
+              offset={-window.innerHeight / 4}
+              className="block px-6 py-4 border-b hover:underline"
+              aria-label="Learn about us"
+              onClick={handleNavClick}
+            >
+              About
+            </Link>
           </li>
           <li>
             <Link to="contact" smooth className="block px-6 py-4 border-b hover:underline" aria-label="Contact us" onClick={handleNavClick}>Contact</Link>
           </li>
+          {/* Social Icons */}
           <li>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="block px-6 py-4 border-b">
+            <a href="https://www.instagram.com/salonbeautifulinc" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="block px-6 py-4 border-b">
               <FontAwesomeIcon icon={faInstagram} className="text-2xl hover:opacity-80 transition duration-300" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="block px-6 py-4">
+            <a href="https://www.facebook.com/salonbeautifulinc" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="block px-6 py-4">
               <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:opacity-80 transition duration-300" />
             </a>
           </li>
