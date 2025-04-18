@@ -1,0 +1,9 @@
+{
+  "name": "Salon Beau.ti.ful",
+  "short_name": "Salon Beautiful",
+  "description": "Premier hair salon in Warman, Saskatchewan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f7",
+  "theme_color": "#a68c6d"
+}
