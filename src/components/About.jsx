@@ -2,7 +2,7 @@ import React from 'react';
 import aboutImage from '../assets/about.webp';
 
 const About = () => (
-  <section className="flex flex-col md:flex-row items-center justify-center h-auto min-h-[60vh] py-12 bg-[#faf9f7]">
+  <section className="flex flex-col md:flex-row items-center justify-center h-auto min-h-[50vh] py-12 bg-[#faf9f7]">
     {/* Left: Text */}
     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start px-4 sm:px-8 md:px-12 mb-8 md:mb-0">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-allura mb-4 text-center md:text-left">About Salon Beau.ti.ful</h2>
