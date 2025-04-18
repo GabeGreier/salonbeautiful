@@ -18,8 +18,12 @@ const About = () => (
       <img
         src={aboutImage}
         alt="Inside Salon Beau.ti.ful"
+        width={800}
+        height={600}
         className="rounded-lg shadow-lg max-h-[300px] sm:max-h-[400px] md:max-h-[500px] w-full max-w-xs sm:max-w-md md:max-w-lg object-cover"
         style={{ objectPosition: 'center' }}
+        loading="lazy"
+        decoding="async"
       />
     </div>
   </section>

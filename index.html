@@ -3,7 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/src/assets/salon.webp" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Primary Meta Tags -->
     <title>Salon Beau.ti.ful</title>
+    <meta name="title" content="Salon Beau.ti.ful | Premier Hair Salon in Warman, Saskatchewan">
+    <meta name="description" content="Experience exceptional hair care at Warman's premier salon. Specializing in cuts, color, and styling. Book your appointment today at Salon Beau.ti.ful.">
+    <meta name="keywords" content="hair salon warman, salon beautiful, hair stylist saskatchewan, warman hair care, salon beau ti ful, best salon warman">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://salonbeautiful.com/">
+    <meta property="og:title" content="Salon Beau.ti.ful | Premier Hair Salon in Warman">
+    <meta property="og:description" content="Experience exceptional hair care at Warman's premier salon. Book your appointment today!">
+    <meta property="og:image" content="/src/assets/salon.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://salonbeautiful.com/">
+    <meta property="twitter:title" content="Salon Beau.ti.ful | Premier Hair Salon in Warman">
+    <meta property="twitter:description" content="Experience exceptional hair care at Warman's premier salon. Book your appointment today!">
+    <meta property="twitter:image" content="/src/assets/salon.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Salon Beau.ti.ful Inc.",
+      "image": "/src/assets/salon.webp",
+      "url": "https://salonbeautiful.com",
+      "@id": "https://salonbeautiful.com",
+      "telephone": "(306) 955-2244",
+      "email": "salonbeautiful16@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#3 901 Centennial Blvd",
+        "addressLocality": "Warman",
+        "addressRegion": "SK",
+        "postalCode": "S0K 4S1",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "52.3329359",
+        "longitude": "-106.5812561"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ],
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.instagram.com/salonbeautifulinc",
+        "https://www.facebook.com/salonbeautifulinc"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

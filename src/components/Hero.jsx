@@ -29,14 +29,24 @@ const Hero = () => {
 
   return (
     <section
-      className="relative w-full flex flex-col justify-between items-center h-screen bg-[#faf9f7] pt-[18vh] overflow-x-hidden"
+      className="relative w-full flex flex-col justify-between items-center min-h-screen bg-[#faf9f7] pt-[18vh] overflow-x-hidden"
+      style={{ 
+        minHeight: 'calc(100vh - 72px)',
+        contentVisibility: 'auto'
+      }}
       aria-label="Hero Section"
     >
       <div
-        className="w-full flex-grow bg-cover bg-center relative z-10"
-        style={{ backgroundImage: `url(${salonImage})` }}
+        className="w-full bg-cover bg-center relative z-10"
+        style={{ 
+          backgroundImage: `url(${salonImage})`,
+          minHeight: "350px",
+          aspectRatio: "16/9"
+        }}
         role="img"
         aria-label="Salon Beautiful Interior"
+        loading="eager"
+        fetchpriority="high"
       />
       <div className="w-full flex items-center justify-center gap-4 h-[18vh] bg-[#faf9f7] relative z-10 px-4 sm:px-12 overflow-hidden">
         {phrases.map((text, i) => (

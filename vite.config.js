@@ -8,5 +8,24 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/salonbeautiful'
+  base: '/salonbeautiful',
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ['console.log']
+      }
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          scroll: ['react-scroll'],
+          icons: ['@fortawesome/react-fontawesome', '@fortawesome/free-brands-svg-icons']
+        }
+      }
+    }
+  }
 })
